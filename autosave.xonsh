@@ -1,0 +1,3 @@
+hash_str = $(md5sum ~/.vimrc | cut -d " " -f 1)
+print(hash_str)
+print(len(hash_str))

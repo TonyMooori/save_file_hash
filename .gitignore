@@ -58,9 +58,10 @@ db.sqlite3
 
 # Flask stuff:
 instance/
+
 *~
 *.secret
-
+*.swp
 .webassets-cache
 
 # Scrapy stuff:
