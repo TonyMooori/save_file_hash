@@ -55,7 +55,7 @@ Then execute `autosave.xonsh`.
 
 ```bash
 >xonsh autosave.xonsh
-https://explorer.bitcoin.com/bch/tx/0734eeb8b7442575ad1897d7b2971c1672208d518dcfc3199c663a316d395edd
+https://explorer.bitcoin.com/bch/tx/ed1787e799e5fcb20eaeb891d060ec63e01a117a98f41e0c19d5776e9ee5c046
 ```
 
 You can find the hash value on the blockchain!
