@@ -21,6 +21,7 @@ def load_key():
 def main():
     if not os.path.exists(PRIVATE_KEY_PATH):
         initialize()
+        return
 
     key = load_key()
     key.get_unspents()
