@@ -14,7 +14,7 @@ def initialize():
 
 def load_key():
     with open(PRIVATE_KEY_PATH) as f:
-        key = Key.from_hex(f.readline())
+        key = Key.from_hex(f.readline().strip())
     return key
 			
 
