@@ -6,10 +6,11 @@ import os
 PRIVATE_KEY_PATH = "./private.secret"
 
 def initialize():
-    # print("making and saving new wallet...")
+     print("Making and saving new wallet...")
     key = Key()
     with open(PRIVATE_KEY_PATH,"w") as f:
         f.write(key.to_hex())
+    print("Send some money to " + key.address)
 
 def load_key():
     with open(PRIVATE_KEY_PATH) as f:
@@ -18,11 +19,9 @@ def load_key():
 			
 
 def main():
-    #if len(sys.argv) < 2:
-    #    return
-    
     if not os.path.exists(PRIVATE_KEY_PATH):
         initialize()
+
     key = load_key()
     key.get_unspents()
     transaction_id = key.send(
@@ -30,8 +29,6 @@ def main():
         fee=1,
         leftover=key.address,
         message=input(),
-        #message=sys.argv[1],
-        #unspents = key.unspents 
     ) 
     print(transaction_id)
      
