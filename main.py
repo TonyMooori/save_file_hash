@@ -27,7 +27,7 @@ def main():
     key.get_unspents()
     transaction_id = key.send(
         [],
-        fee=get_fee("slow"),
+        fee=1,
         leftover=key.address,
         message=input(),
         #message=sys.argv[1],
