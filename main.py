@@ -6,7 +6,7 @@ import os
 PRIVATE_KEY_PATH = "./private.secret"
 
 def initialize():
-     print("Making and saving new wallet...")
+    print("Making and saving new wallet...")
     key = Key()
     with open(PRIVATE_KEY_PATH,"w") as f:
         f.write(key.to_hex())
