@@ -62,6 +62,9 @@ instance/
 *~
 *.secret
 *.swp
+tx.txt
+hash.txt
+
 .webassets-cache
 
 # Scrapy stuff:
