@@ -22,8 +22,13 @@ def main():
     if not os.path.exists(PRIVATE_KEY_PATH):
         initialize()
         return
-
+    
     key = load_key()
+    
+    if sys.argv[1] == "address":
+        print(key.address)    
+        return
+
     key.get_unspents()
     transaction_id = key.send(
         [],
