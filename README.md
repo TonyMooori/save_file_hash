@@ -35,8 +35,8 @@ If there is no money, you cannot make transaction.
 But it doesn't take so much money(about 0.2 cent/transaction).
 About 10 cent is enough to demonstrate.
 
-## Edit autosave.xonsh
-`autosave.xonsh` is a script that acquires the hash value of the file and save it in the transaction.
+## Edit autosave.xsh
+`autosave.xsh` is a script that acquires the hash value of the file and save it in the transaction.
 If you prefer bash, you should write shell script.
 This is a sample to save the hash value of `.vimrc`.
 
@@ -50,11 +50,11 @@ print("https://explorer.bitcoin.com/bch/tx/" + $(cat tx.txt))
 
 `main.py` is a program that saves the input string in the transaction and display the transaction id.
 
-## Execute autosave.xonsh
-Then execute `autosave.xonsh`.
+## Execute autosave.xsh
+Then execute `autosave.xsh`.
 
 ```bash
->xonsh autosave.xonsh
+>xonsh autosave.xsh
 https://explorer.bitcoin.com/bch/tx/ed1787e799e5fcb20eaeb891d060ec63e01a117a98f41e0c19d5776e9ee5c046
 ```
 
